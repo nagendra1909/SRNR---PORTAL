@@ -38,7 +38,7 @@ function FileCard({ title, onUpload, onDownload }: FileCardProps) {
   }
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-2">
       <h3 className="text-sm font-medium text-gray-700">{title}</h3>
       <Card
         className={`border-2 border-dashed transition-colors ${
@@ -48,13 +48,13 @@ function FileCard({ title, onUpload, onDownload }: FileCardProps) {
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
       >
-        <CardContent className="p-8">
-          <div className="text-center space-y-4">
+        <CardContent className="p-3">
+          <div className="text-center space-y-1">
             <div className="flex justify-center">
-              <Download className="w-8 h-8 text-blue-500" />
+              <Download className="w-6 h-6 text-blue-500" />
             </div>
             <div className="space-y-2">
-              <p className="text-sm text-gray-600">Download file here ⬇️</p>
+              {/* <p className="text-sm text-gray-600">Download file here ⬇️</p> */}
               <div className="flex justify-center space-x-2">
                 <Button
                   variant="outline"
@@ -62,7 +62,7 @@ function FileCard({ title, onUpload, onDownload }: FileCardProps) {
                   onClick={onDownload}
                   className="text-blue-600 border-blue-600 hover:bg-blue-50"
                 >
-                  <Download className="w-4 h-4 mr-2" />
+                  <Download className="w-3 h-3 mr-2" />
                   Download
                 </Button>
                 <Button
@@ -71,7 +71,7 @@ function FileCard({ title, onUpload, onDownload }: FileCardProps) {
                   onClick={onUpload}
                   className="text-blue-600 border-blue-600 hover:bg-blue-50"
                 >
-                  <Upload className="w-4 h-4 mr-2" />
+                  <Upload className="w-3 h-3 mr-2" />
                   Upload
                 </Button>
               </div>
@@ -135,10 +135,10 @@ export default function MedicalContent() {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-2">
       {/* Page Heading */}
-      <div>
-        <h1 className="text-2xl font-semibold text-gray-900 mb-8">Medical</h1>
+      <div  className="flex justify-center my-2">
+        <h1 className="text-2xl font-semibold text-gray-900 mb-8">Medical Details</h1>
       </div>
 
       {/* Insurance Details Section */}

@@ -120,8 +120,8 @@ export default function ExpensesContent() {
   return (
     <div className="space-y-6">
       {/* Page Heading */}
-      <div>
-        <h1 className="text-2xl font-semibold text-gray-900 mb-8">Expenses Claims</h1>
+      <div  className="flex justify-center my-1">
+        <h1 className="text-2xl font-semibold text-gray-900 mb-2">Expenses Claims</h1>
       </div>
 
       {/* Form */}
@@ -131,7 +131,7 @@ export default function ExpensesContent() {
             {/* Form Fields - Two Column Layout */}
             <div className="grid grid-cols-2 gap-6">
               {/* Left Column */}
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {/* Name */}
                 <div>
                   <Label htmlFor="name" className="text-sm font-medium text-gray-700">
@@ -181,7 +181,7 @@ export default function ExpensesContent() {
               </div>
 
               {/* Right Column */}
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {/* Employee ID */}
                 <div>
                   <Label htmlFor="employeeId" className="text-sm font-medium text-gray-700">
@@ -249,7 +249,7 @@ export default function ExpensesContent() {
                 id="description"
                 value={formData.description}
                 onChange={(e) => handleInputChange("description", e.target.value)}
-                className="mt-1 min-h-[120px]"
+                className="mt-1 min-h-[80px]"
                 placeholder="Enter detailed description of the expense..."
                 required
               />
@@ -350,8 +350,8 @@ export default function ExpensesContent() {
         </Card>
 
         {/* Submit Button */}
-        <div className="flex justify-end">
-          <Button type="submit" className="bg-blue-600 hover:bg-blue-700 px-8 py-2">
+        <div className="flex justify-center">
+          <Button type="submit" className="bg-blue-600 hover:bg-blue-700 px-10 py-2">
             Submit
           </Button>
         </div>

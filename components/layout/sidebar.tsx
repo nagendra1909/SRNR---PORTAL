@@ -21,7 +21,7 @@ export default function Sidebar() {
   return (
     <div className="w-80 h-full bg-blue-600 text-white flex flex-col">
       {/* Logo Section */}
-      <div className="p-6 border-b border-blue-500">
+      <div className="p-4 border-b border-blue-500">
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
             <span className="text-blue-600 font-bold text-lg">S</span>

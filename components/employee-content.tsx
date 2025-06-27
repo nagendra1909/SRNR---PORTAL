@@ -16,10 +16,12 @@ export default function EmployeeContent() {
   return (
     <div className="grid grid-cols-12 gap-6">
       {/* Left Side - Employee Details Card */}
-      <div className="col-span-4">
+      <div className="col-span-3">
         <Card>
-          <CardHeader>
-            <CardTitle>Employee details</CardTitle>
+          <CardHeader >
+            <div className="flex justify-center">
+            {/* <CardTitle>Employee details</CardTitle> */}
+            </div>
           </CardHeader>
           <CardContent className="space-y-6">
             {/* Profile Image */}
@@ -32,7 +34,7 @@ export default function EmployeeContent() {
 
             {/* Employee Name */}
             <div className="text-center">
-              <h2 className="text-xl font-semibold text-gray-900">Ch.yaswanth goud</h2>
+              <h2 className="text-xl font-semibold text-gray-900">Ch.Yaswanth goud</h2>
             </div>
 
             {/* Employee Details */}
@@ -72,7 +74,7 @@ export default function EmployeeContent() {
       </div>
 
       {/* Right Side - Tabbed Interface */}
-      <div className="col-span-8">
+      <div className="col-span-9">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-3 mb-6">
             <TabsTrigger value="details">Employee details and contact</TabsTrigger>
@@ -85,10 +87,12 @@ export default function EmployeeContent() {
             {/* Employee Details Section */}
             <Card>
               <CardHeader>
-                <CardTitle>Employee details</CardTitle>
+                <div className="flex justify-center my-2">
+                <CardTitle>Employee Details</CardTitle>
+                </div>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 gap-4 my-3">
                   <div>
                     <Label htmlFor="employeeName">Employee Name</Label>
                     <Input id="employeeName" defaultValue="Ch.yaswanth goud" className="mt-1" />
@@ -119,14 +123,19 @@ export default function EmployeeContent() {
 
             {/* Contact Section */}
             <Card>
-              <CardHeader className="flex flex-row items-center justify-between">
-                <CardTitle>Contact</CardTitle>
+              <CardHeader className="">
+                <div className="flex justify-center">
+                <CardTitle>Contact Details</CardTitle>
+                </div>
+                <div className="flex justify-center">
                 <Button variant="ghost" size="icon">
+                  <h6>Edit</h6>
                   <Edit3 className="w-4 h-4" />
                 </Button>
+                </div>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4 mb-8">
                   <div>
                     <Label htmlFor="employeeEmail">
                       Employee Email <span className="text-red-500">*</span>
@@ -172,7 +181,9 @@ export default function EmployeeContent() {
           <TabsContent value="status">
             <Card>
               <CardHeader>
+                <div className="flex justify-center my-2">
                 <CardTitle>Employee Status</CardTitle>
+                </div>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-4">
@@ -217,23 +228,29 @@ export default function EmployeeContent() {
           <TabsContent value="remarks">
             <Card>
               <CardHeader>
+              <div className="flex justify-center my-2">
                 <CardTitle>Remarks</CardTitle>
+                </div>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
+                  <div className="flex justify-center my-5 ">
                   <Label htmlFor="positiveRemarks">Positive Remarks</Label>
+                  </div>
                   <Textarea
                     id="positiveRemarks"
-                    placeholder="Enter positive remarks about the employee..."
+                    placeholder="Positive remarks about the employee..."
                     className="mt-1 min-h-[120px]"
                     defaultValue="Excellent problem-solving skills and great team player. Shows initiative in learning new technologies."
                   />
                 </div>
                 <div>
+                  <div className="flex justify-center my-5 mt-20">
                   <Label htmlFor="negativeRemarks">Negative Remarks</Label>
+                  </div>
                   <Textarea
                     id="negativeRemarks"
-                    placeholder="Enter areas for improvement..."
+                    placeholder="Areas for improvement..."
                     className="mt-1 min-h-[120px]"
                     defaultValue="Could improve time management skills and communication in meetings."
                   />

@@ -29,15 +29,15 @@ interface CertificationCardProps {
 
 function CertificationCard({ title, onDownload }: CertificationCardProps) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-1">
       <h3 className="text-sm font-medium text-gray-700">{title}</h3>
       <Card className="border-2 border-dashed border-blue-300 bg-blue-50">
         <CardContent className="p-6">
           <div className="text-center space-y-3">
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <Download className="w-6 h-6 text-blue-500" />
-            </div>
-            <p className="text-sm text-gray-600">Download file here</p>
+            </div> */}
+            {/* <p className="text-sm text-gray-600">Download file here</p> */}
             <Button
               variant="outline"
               size="sm"
@@ -45,7 +45,7 @@ function CertificationCard({ title, onDownload }: CertificationCardProps) {
               className="text-blue-600 border-blue-600 hover:bg-blue-50"
             >
               <Download className="w-4 h-4 mr-2" />
-              Download
+              Download File Here
             </Button>
           </div>
         </CardContent>
@@ -147,9 +147,9 @@ export default function DocumentsContent() {
   return (
     <div className="space-y-6">
       {/* Page Heading */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold text-gray-900 mb-8">Documents</h1>
-      </div>
+      </div> */}
 
       {/* Tabs Interface */}
       <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
@@ -180,14 +180,18 @@ export default function DocumentsContent() {
         {/* Attachments Tab */}
         <TabsContent value="attachments">
           <div className="space-y-6">
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-semibold text-gray-900">Attachments</h2>
+            <div className="">
+            <div className="flex justify-center">
+              <h2 className="text-2xl font-semibold text-gray-900">Attachments</h2>
+            </div>
+            <div className="flex justify-center my-4">
               <Button onClick={handleAddNewFile} className="bg-blue-600 hover:bg-blue-700" size="sm">
                 <Plus className="w-4 h-4 mr-2" />
                 Add a new file
               </Button>
+            </div>  
             </div>
-
+            <div className="px-10 ">
             <Card>
               <CardContent className="p-0">
                 <div className="space-y-0">
@@ -197,6 +201,7 @@ export default function DocumentsContent() {
                 </div>
               </CardContent>
             </Card>
+            </div>
           </div>
         </TabsContent>
       </Tabs>

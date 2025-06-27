@@ -72,11 +72,11 @@ export default function AssetsContent() {
   }
 
   return (
-    <div className="space-y-6 text-center">
+    <div className="space-y-4 text-center">
       {/* Page Heading */}
-      <div>
+      {/* <div>
         <h1 className="text-2xl font-semibold text-gray-900 mb-6">Assets</h1>
-      </div>
+      </div> */}
 
       {/* Assets Grid */}
       <div className="grid grid-cols-4 gap-6">
@@ -117,8 +117,8 @@ export default function AssetsContent() {
       </div>
 
       {/* Submit Button */}
-      <div className="flex justify-end pt-6">
-        <Button onClick={handleSubmit} className="bg-blue-600 hover:bg-blue-700 px-8 py-2">
+      <div className="flex justify-center pt-6">
+        <Button onClick={handleSubmit} className="bg-blue-600 hover:bg-blue-700 px-10 py-2">
           Submit
         </Button>
       </div>

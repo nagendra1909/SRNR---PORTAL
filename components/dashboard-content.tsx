@@ -282,7 +282,14 @@ export default function DashboardContent() {
                   <TableCell className="text-xs py-2"></TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="text-md py-2">Ticket_0002</TableCell>
+                  <TableCell className="text-md py-4">Ticket_0002</TableCell>
+                  <TableCell className="text-xs py-2"></TableCell>
+                  <TableCell className="text-xs py-2"></TableCell>
+                  <TableCell className="text-xs py-2"></TableCell>
+                  <TableCell className="text-xs py-2"></TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="text-md py-4">Ticket_0003</TableCell>
                   <TableCell className="text-xs py-2"></TableCell>
                   <TableCell className="text-xs py-2"></TableCell>
                   <TableCell className="text-xs py-2"></TableCell>

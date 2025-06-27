@@ -66,15 +66,15 @@ export default function FinancialContent() {
   return (
     <div className="space-y-6">
       {/* Page Heading */}
-      <div>
-        <h1 className="text-2xl font-semibold text-gray-900 mb-8">My Financial</h1>
+      <div className="flex justify-center my-2">
+        <h1 className="text-2xl font-semibold text-gray-900 mb-6">My Financial Details</h1>
       </div>
 
       {/* Month/Year Selectors and View History */}
       <div className="flex items-center justify-between mb-6">
-        <div className="flex space-x-4">
+        <div className="flex space-x-10">
           {/* Select Month */}
-          <div className="w-48">
+          <div className="w-60">
             <Select value={selectedMonth} onValueChange={setSelectedMonth}>
               <SelectTrigger>
                 <SelectValue placeholder="Select Month" />
@@ -90,7 +90,7 @@ export default function FinancialContent() {
           </div>
 
           {/* Select Year */}
-          <div className="w-48">
+          <div className="w-60">
             <Select value={selectedYear} onValueChange={setSelectedYear}>
               <SelectTrigger>
                 <SelectValue placeholder="Select Year" />
