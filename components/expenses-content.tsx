@@ -121,7 +121,7 @@ export default function ExpensesContent() {
     <div className="space-y-6">
       {/* Page Heading */}
       <div  className="flex justify-center my-1">
-        <h1 className="text-2xl font-semibold text-gray-900 mb-2">Expenses Claims</h1>
+        <h1 className="text-2xl font-semibold text-gray-900 mb-2">Claim Your Expenses </h1>
       </div>
 
       {/* Form */}

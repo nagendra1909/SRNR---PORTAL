@@ -138,7 +138,7 @@ export default function MedicalContent() {
     <div className="space-y-2">
       {/* Page Heading */}
       <div  className="flex justify-center my-2">
-        <h1 className="text-2xl font-semibold text-gray-900 mb-8">Medical Details</h1>
+        <h1 className="text-2xl font-semibold text-gray-900 mb-8">Employee Medical Details</h1>
       </div>
 
       {/* Insurance Details Section */}

@@ -3,7 +3,7 @@ import MedicalContent from "@/components/medical-content"
 
 export default function MedicalPage() {
   return (
-    <MainLayout title="Medical Details">
+    <MainLayout title="Medical">
       <MedicalContent />
     </MainLayout>
   )

@@ -31,7 +31,7 @@ export default function Header({ title }: HeaderProps) {
               <AvatarFallback>B</AvatarFallback>
             </Avatar>
             <div className="text-sm">
-              <div className="font-medium">balu</div>
+              <div className="font-medium">Yaswanth</div>
               <div className="text-gray-500">@domain.in</div>
             </div>
           </div>
