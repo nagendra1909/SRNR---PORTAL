@@ -27,7 +27,7 @@ export default function EmployeeContent() {
             {/* Profile Image */}
             <div className="flex justify-center">
               <Avatar className="w-32 h-32">
-                <AvatarImage src="/placeholder.svg?height=128&width=128" />
+                <AvatarImage src="/sample_profile.png?height=128&width=128" />
                 <AvatarFallback className="text-2xl">CY</AvatarFallback>
               </Avatar>
             </div>

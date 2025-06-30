@@ -23,11 +23,16 @@ export default function Sidebar() {
       {/* Logo Section */}
       <div className="p-4 border-b border-blue-500">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-            <span className="text-blue-600 font-bold text-lg">S</span>
+          <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+            <img
+              src="/srnr_logo.jpeg"
+              alt="SRNR Logo"
+              className="w-10 h-10 object-contain"
+            />
           </div>
           <div>
-            <h1 className="text-lg font-semibold">SRNR IT SOLUTIONS</h1>
+            <h1 className="text-lg font-semibold font-Orbitron">SRNR IT SOLUTIONS</h1>
+            {/* Replace 'font-serif' with your desired Tailwind font class or add a custom class */}
           </div>
         </div>
       </div>

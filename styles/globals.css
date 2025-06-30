@@ -1,9 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /* Remove this line or comment it out */
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 @layer utilities {
@@ -91,4 +93,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif !important;
 }
